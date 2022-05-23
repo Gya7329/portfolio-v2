@@ -1,0 +1,95 @@
+
+@import '../../global.scss';
+.contact {
+  background-color: lightblue;
+  display: flex;
+
+
+
+}
+.contactimg{
+ width: 90% ;
+ height: 80%;
+ @include mobile{
+  width: 95% ;
+  height: 75%;
+
+}
+}
+.c-info {
+
+
+  display:none;
+@include mobile
+{
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  font-size:14px;
+  justify-content:center;
+}
+
+}
+
+
+.c-info img {
+  height: 30px;
+  // margin-left: 300px;
+@include mobile{
+  height:20px;
+}
+
+}
+
+.right {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  flex-direction: column;
+
+
+
+h2{
+    // margin-right:319px ;
+    @include mobile{
+      margin-right:65px;
+    }
+}
+  input {
+
+    width: 70%;
+    height: 56px;
+    border: none;
+    border-bottom: 1.2px solid black;
+    margin: 10px 0;
+    font-size: 14px;
+    padding-left: 18px;
+    background-color: lightblue;
+  }
+
+  textarea{
+      width: 90%;
+      margin: 10px 0;
+      font-size: 14px;
+      padding-left: 15px;
+      background-color: lightblue;
+  }
+  .submit{
+      border: none;
+      background-color:rgb(44, 218, 38);
+      font-size:14px;
+      padding: 10px;
+      border-radius:10px 0 10px 0;
+      cursor: pointer;
+      font-weight: 400;
+  }
+  button:hover{
+      color: #fff;
+      font-weight: 600;
+  }
+//   span{
+//       display: flex;
+//       margin-top:10px ;
+//       color:blue;
+//   }
+}

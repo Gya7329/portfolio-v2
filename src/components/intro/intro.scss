@@ -1,0 +1,212 @@
+@import "../../global.scss";
+
+.intro {
+  display: flex;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1189%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1190)'%3e%3c/rect%3e%3cpath d='M 0%2c212 C 57.6%2c254.4 172.8%2c427.2 288%2c424 C 403.2%2c420.8 460.8%2c224.4 576%2c196 C 691.2%2c167.6 748.8%2c285.4 864%2c282 C 979.2%2c278.6 1036.8%2c156.4 1152%2c179 C 1267.2%2c201.6 1382.4%2c351.8 1440%2c395L1440 560L0 560z' fill='rgba(61%2c 96%2c 90%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1189'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='15.28%25' y1='139.29%25' x2='84.72%25' y2='-39.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1190'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(61%2c 96%2c 90%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left {
+    overflow: hidden;
+    flex: 0.5;
+    .imgContainer {
+      width: 700px;
+
+      height: 700px;
+
+      // background-color: #FA4D56;
+      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: right;
+      @include mobile {
+        align-items: flex-start;
+        border-radius: 90%;
+      }
+      img {
+        height: 90%;
+        @include mobile {
+          height: 50%;
+        }
+      }
+      .sidebar{
+        position:absolute;
+        top:30px;
+      }
+    }
+  }
+  .right {
+    flex: 0.5;
+
+    .wrapper {
+      width: 100%;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+        color: #fff;
+        font-weight: bolder;
+        @include mobile {
+          font-size: 40px;
+        }
+      }
+      h2 {
+        font-size: 35px;
+        color: #fff;
+
+        @include mobile {
+          font-size: 30px;
+          margin: 10px 0;
+        }
+      }
+
+      .intro-heading{
+        color: #fff;
+        font-weight: 400;
+        padding-top: 10px;
+        line-height: 25px;
+        & .company-name{
+          text-decoration: none;
+          color: yellow !important;
+          padding-left: 5px;
+
+          &:hover{
+          text-decoration: underline;
+          }
+        }
+
+      }
+
+.hire-me{
+  border: 1px solid yellow;
+  background:transparent;
+  color: #fff;
+  padding: 10px 20px;
+  outline: none;
+  margin: 10px 0;
+&:hover{
+  background:yellow;
+  color: #3d605a;
+  font-weight: bolder;
+}
+
+}
+.resume{
+  background:yellow;
+  border: 1px solid yellow;
+  color: #3d605a;
+  outline: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  &:hover{
+    background:transparent;
+    color: #fff;
+    font-weight: bolder;
+  }
+}
+
+      h3 {
+        font-size: 40px;
+        font-weight: 700;
+        @include mobile {
+          font-size: 30px;
+        }
+        span {
+          color: yellow;
+        }
+      }
+    }
+    .scroll-down {
+      position: absolute;
+      bottom: 10px;
+      left: 65%;
+      img {
+        width: 30px;
+        filter: invert(1);
+        animation: arrowblink 2s infinite;
+        @include mobile {
+          margin-left: 60px;
+        }
+      }
+      @keyframes arrowblink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+.social {
+  position: fixed;
+  top: 30%;
+}
+
+.social ul {
+  list-style-type: none;
+  padding: 0;
+  transform: translatex(-270px);
+}
+
+.social ul li {
+  display: block;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 0 20px 10px 0;
+  transition: all 1s;
+}
+
+
+
+
+
+.social ul li.facebook:hover {
+  background-color: #3b5999;
+}
+
+.social ul li.github:hover {
+  background-color: #171515;
+}
+
+.social ul li.linkedin:hover {
+  background-color: #0077b5;
+}
+
+.social ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.social ul li i {
+  text-align: center;
+  margin-left: 14px;
+  color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  transform: rotate(0deg);
+}
+
+.social ul li:hover i {
+  transform: rotate(360deg);
+  transition: all 1s;
+}

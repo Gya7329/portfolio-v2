@@ -1,0 +1,11 @@
+$mainColor:#3d605a;
+$width:768px;
+@mixin mobile {
+    @media (max-width:#{$width}){
+        @content
+    }
+
+}
+.d-flex{
+    display:flex;
+}
