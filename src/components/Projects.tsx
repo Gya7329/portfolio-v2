@@ -85,7 +85,7 @@ const projects = [
 export default function Projects() {
   return (
     <section
-      className="py-32 bg-background dark:bg-gray-900 transition-colors duration-300"
+      className="py-32 bg-background dark:bg-gray-800 transition-colors duration-300"
       id="projects"
     >
       <div className="container mx-auto px-4">

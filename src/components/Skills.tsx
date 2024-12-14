@@ -44,7 +44,10 @@ const skillCategories = [
 
 export default function Skills() {
   return (
-    <section className="py-32 bg-background" id="skills">
+    <section
+      className="py-20 bg-white dark:bg-gray-700 transition-colors duration-300"
+      id="skills"
+    >
       <div className="container mx-auto px-4">
         <SectionTitle>Skills & Expertise</SectionTitle>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
